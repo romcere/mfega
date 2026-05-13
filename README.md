@@ -64,14 +64,14 @@
    > 使用nvm的情况可直接使用命令，否则需要手动下载安装
 
    ```shell
-   nvm install v20.15.0
-   nvm use v20.15.0
+   nvm install v25.9.0
+   nvm use v25.9.0
    ```
 
 2. 安装pnpm
 
    ```shell
-   npm install -g pnpm@9.14.2
+   npm install -g pnpm@11.1.1
    ```
 
 3. 在该项目中，我通过限制npm的版本，来达到了无法使用npm的目的，以统一使用pnpm，避免项目管理混乱
@@ -152,6 +152,8 @@
    ```shell
    # <工作目录> 会自动创建，不需要手动创建
    git submodule add <git仓库地址> <工作目录>
+   # 下载指定子模块
+   git submodule update --init <子模块路径>
    ```
 
 # 可能遇到的问题

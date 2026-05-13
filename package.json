@@ -9,10 +9,10 @@
 		"url": "https://github.com/tianhuoDD/mfega"
 	},
 	"license": "MIT",
-	"packageManager": "pnpm@9.14.2",
+	"packageManager": "pnpm@11.1.1",
 	"engines": {
-		"node": ">=20.15.0",
-		"pnpm": ">=9.14.2",
+		"node": ">=25.9.0",
+		"pnpm": ">=11.1.1",
 		"npm": ">=999.0.0"
 	},
 	"type": "module",
@@ -71,7 +71,8 @@
 			"scripts.lint:prettier": "使用Prettier格式化全部代码",
 			"scripts.prepare": "在使用 pnpm i 后，安装 husky ",
 			"scripts.lint:lint-staged": "检查提交的代码，进行格式化",
-			"scripts.commit": "使用 git cz 进行格式化"
+			"scripts.commit": "使用 git cz 进行格式化",
+			"packageManager": "推荐的包管理器及版本"
 		}
 	}
 }

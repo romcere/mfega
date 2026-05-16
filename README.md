@@ -141,19 +141,25 @@
    pnpm run commit
    ```
 3. 回退版本 - **请使用revert回退版本**，避免发生无可挽回的错误
+
    ```shell
+   # 查询版本号
+   git log --oneline
    # 回退指定版本(留下记录)
    git revert <版本号>
    # 终止回退版本
    git revert --abort
    ```
+
 4. Git Submodule(Git子模块)使用
    需要先将想要作为子模块的文件推送到远程仓库
    ```shell
-   # <工作目录> 会自动创建，不需要手动创建
-   git submodule add <git仓库地址> <工作目录>
+   # 在父模块路径下使用git,用以添加子模块
+   git submodule add <子模块远程链接> <相对父模块的路径>
+   git submodule add https://github.com/romcere/becoming.git apps/becoming
    # 下载指定子模块
-   git submodule update --init <子模块路径>
+   git submodule update --init <相对父模块的路径>
+   git submodule update --init apps/becoming
    ```
 
 # 可能遇到的问题

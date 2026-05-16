@@ -11,3 +11,6 @@
 [submodule "apps/punch-in"]
 	path = apps/punch-in
 	url = https://github.com/tianhuoDD/punch-in.git
+[submodule "apps/becoming"]
+	path = apps/becoming
+	url = https://github.com/romcere/becoming.git

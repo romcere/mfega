@@ -80,14 +80,13 @@
 
 > git提交工具链：`husky`(git 钩子) + `lint-staged`(在git暂存区执行lint) + `commitlint`(检测是否符合提交规范) + `commitizen`和`cz-git`(辅助生成提交规范)
 
-#### 一键使用Git提交工具链
+#### 一键使用Git提交工具链(子模块需配置)
 
-一键安装：进入指定项目终端：`pnpm init` + `pnpm -F=<指定项目> add -D husky lint-staged commitlint commitizen cz-git`
+一键安装：进入指定项目终端：`pnpm -F=<指定项目> add -D husky lint-staged commitlint commitizen cz-git`
 拖动文件：`.husky`、`commitlint.config.js`，并在`package.json`中添加:
 
 ```json
 {
-	"type": "module",
 	"scripts": {
 		"lint:eslint": "eslint . --fix",
 		"lint:prettier": "prettier --write .",
@@ -160,6 +159,28 @@
    # 下载指定子模块
    git submodule update --init <相对父模块的路径>
    git submodule update --init apps/becoming
+   ```
+   由于 lint-staged 只作用于当前git存储库，所以子模块需单独安装 lint-staged ,并配置:
+   ```shell
+   	"lint-staged": {
+   	"*.{js,ts,vue}": [
+   		"eslint --fix",
+   		"prettier --write"
+   	],
+   	"*.{cjs,json}": [
+   		"prettier --write"
+   	],
+   	"*.{vue,html}": [
+   		"eslint --fix",
+   		"prettier --write"
+   	],
+   	"*.{scss,css}": [
+   		"prettier --write"
+   	],
+   	"*.md": [
+   		"prettier --write"
+   	]
+   },
    ```
 
 # 可能遇到的问题

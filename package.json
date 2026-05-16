@@ -69,7 +69,7 @@
 		"package.json": {
 			"scripts.lint:eslint": "使用 ESLint 检查全部文件",
 			"scripts.lint:prettier": "使用Prettier格式化全部代码",
-			"scripts.prepare": "在使用 pnpm i 后，安装 husky ",
+			"scripts.prepare": "在使用 pnpm i 后，初始化 Git hooks 系统",
 			"scripts.lint:lint-staged": "检查提交的代码，进行格式化",
 			"scripts.commit": "使用 git cz 进行格式化",
 			"packageManager": "推荐的包管理器及版本"

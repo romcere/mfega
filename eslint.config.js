@@ -40,6 +40,8 @@ export default [
 				showLoadingToast: true,
 				showConfirmDialog: true,
 				showImagePreview: true,
+				/* 允许使用 uni-app 全局变量 */
+				uni: true,
 				// 追加一些其他自定义全局规则
 			},
 		},

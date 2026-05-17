@@ -3,3 +3,5 @@ packages:
   - apps/* # 包含所有 apps 目录下的应用
   - packages/** # 包含所有 packages 目录下的子包
   - libs/** # 包含所有 libs 目录下的库
+# 允许所有包构建 https://pnpm.io/zh/settings#dangerouslyallowallbuilds
+dangerouslyAllowAllBuilds: true

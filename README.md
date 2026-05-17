@@ -106,8 +106,8 @@ npm install -g pnpm@10.33.3
 
    ```shell
    # 向指定项目添加生产 / 开发依赖
-   pnpm -F=<项目名> add -P <package>   # 生产环境
-   pnpm -F=<项目名> add -D <package>   # 开发环境
+   pnpm -F=<项目名> add -P <package>  # 生产环境
+   pnpm -F=<项目名> add -D <package>  # 开发环境
    
    # 向工作区根目录添加依赖
    pnpm add -D <package> -w

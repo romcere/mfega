@@ -2,7 +2,13 @@ import { defineConfig } from "cz-git";
 
 export default defineConfig({
 	extends: ["@commitlint/config-conventional"], // 限制commit规则
-	rules: {},
+	rules: {
+		"type-enum": [
+			2, // error（错误，阻止提交）
+			"always",
+			["feat", "fix", "docs", "style", "refactor", "fix", "test", "ci", "init", "revert", "chore"],
+		],
+	},
 	prompt: {
 		alias: { fd: "docs: fix typos" },
 

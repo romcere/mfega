@@ -44,9 +44,6 @@
 		],
 		"*.{scss,css}": [
 			"prettier --write"
-		],
-		"*.md": [
-			"prettier --write"
 		]
 	},
 	"devDependencies": {

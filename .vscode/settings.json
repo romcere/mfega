@@ -1,5 +1,5 @@
 {
-	// `Code Spell Checker`扩展：忽略警告的单词
+	// Code Spell Checker 扩展：忽略警告的单词
 	"cSpell.words": [
 		"amfe",
 		"axios",
@@ -19,6 +19,7 @@
 		"Romcere's",
 		"swipeable",
 		"uniuse",
+		"unocss",
 		"unplugin",
 		"vant",
 		"VITE",
@@ -27,7 +28,7 @@
 		"zheng"
 	],
 
-	// `ESLint`扩展：配置要检查的文件
+	// ESLint 扩展：配置要检查的文件
 	"eslint.validate": [
 		"javascript",
 		"javascriptreact",
@@ -45,18 +46,24 @@
 		"astro"
 	],
 
-	// `别名路径跳转`扩展：配置别名映射
+	// 别名路径跳转 扩展：配置别名映射
 	"alias-skip.mappings": {
 		"@": "/src" // 默认只有`@`映射
 	},
 	"alias-skip.allowedsuffix": ["js", "vue", "jsx", "ts"], // 缺省后缀名的文件列表
 	"alias-skip.rootpath": "package.json", // 默认项目根目录的依据
 
-	// `prettier`扩展：配置要格式化的文件类型
+	// prettier 扩展：配置要格式化的文件类型
 	"[javascript]": {
 		"editor.defaultFormatter": "esbenp.prettier-vscode"
 	},
 	"[json]": {
 		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	// 启用JSONC语法
+	"files.associations": {
+		"manifest.json": "jsonc",
+		"pages.json": "jsonc",
+		"theme.json": "jsonc"
 	}
 }

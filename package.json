@@ -6,7 +6,7 @@
 	"author": "@Rom",
 	"repository": {
 		"type": "github",
-		"url": "https://github.com/tianhuoDD/mfega"
+		"url": "https://github.com/romcere/mfega"
 	},
 	"license": "MIT",
 	"packageManager": "pnpm@10.33.3",
